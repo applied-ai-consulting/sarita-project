@@ -1,6 +1,6 @@
 # superrepo
 
-# Amazon s3-website
+# Amazon s3-website.
 
 ## overview
 
