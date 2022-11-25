@@ -16,12 +16,6 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
              
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: build-artifact
-          path: build/
-          
       - name: Install AWS CLI v2
         run: |
           curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o /tmp/awscliv2.zip
@@ -31,4 +25,4 @@ jobs:
           rm -rf /tmp/aws/
           
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync build/  s3://${{ secrets.BUCKET_NAME }} --acl public-read
+        run: aws s3 sync ./  s3://${{ secrets.BUCKET_NAME }} --acl public-read
