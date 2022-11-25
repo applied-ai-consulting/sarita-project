@@ -15,11 +15,6 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
-
-      - name: Install dependencies and build
-        run: |
-             npm install 
-             npm run build
              
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
