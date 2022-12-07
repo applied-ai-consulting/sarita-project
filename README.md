@@ -2,7 +2,7 @@
 
 ## overview
 
-This module is responsible for creating a website hosted on Amazon S3 with a custom DNS name.
+This module is responsible for creating a website hosted on Amazon S3 with a customize DNS name.
 
 # Requirements
 
